@@ -1640,7 +1640,7 @@ video {
   }
 }
 
-body{
+body, html{
   overflow-x: hidden;
 }
 
@@ -2526,6 +2526,11 @@ body, button, input, textarea, a, span, p, div{
     padding-top: 2rem;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-\[20px\] {
     font-size: 20px;
   }
@@ -2552,11 +2557,6 @@ body, button, input, textarea, a, span, p, div{
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:leading-6 {
