@@ -1,0 +1,380 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-SemiBold.woff2') format('woff2'),
+        url('fonts/Lato-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Bold.woff2') format('woff2'),
+        url('fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Medium.woff2') format('woff2'),
+        url('fonts/Lato-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.woff2') format('woff2'),
+        url('fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-ExtraBold.woff2') format('woff2'),
+        url('fonts/Lato-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Black.woff2') format('woff2'),
+        url('fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1230px;
+    }
+}
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+.language #dropdown{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.language.opened #dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+.language #dropdown li a svg{
+    opacity: 0;
+}
+
+.language #dropdown li a.selected svg{
+   opacity: 1;
+}
+
+
+.header{
+    min-height: 62px;
+}
+
+.logo {
+    min-height: 34px;
+}
+
+@media(max-width: 768px){
+    #dropdown{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        left: 0;
+        border-radius: 0;
+        padding: 0px 60px;
+    }
+
+    .language.opened .icon, .language.opened .language-value{
+        display: none;
+    }
+    
+    .language.opened .close{
+        display: block !important;
+    }
+}
+
+
+.header li>ul                 { transform: translatex(100%) scale(0) }
+.header li:hover>ul           { transform: translatex(101%) scale(1) }
+.header li > button svg       { transform: rotate(-90deg) }
+.header li:hover > button svg { transform: rotate(-270deg) }
+
+/* Below styles fake what can be achieved with the tailwind config
+   you need to add the group-hover variant to scale and define your custom
+   min width style.
+     See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+     for implementation with config file
+*/
+.header .group:hover .group-hover\:scale-100 { transform: scale(1) }
+.header .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+.header .scale-0 { transform: scale(0) }
+.header .min-w-32 { min-width: 8rem }
+
+
+body, button, input, textarea, a, span, p, div{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.menu-item{
+    @apply rounded-sm px-3 py-1 md:hover:bg-gray-100 text-white md:text-black md:text-base text-lg font-semibold border-none;
+}
+
+.submenu{
+    @apply bg-none md:bg-white  rounded-sm transform scale-100 md:group-hover:scale-100  
+    transition duration-150 ease-in-out origin-top min-w-32 md:shadow-sm md:p-2 mt-4 md:mt-0 static md:absolute md:scale-0 mb-12 hidden md:block;
+}
+
+.menu-parent.opened button{
+    color: #E55E33 !important;
+}
+
+
+.menu-parent.opened button svg{
+    transform: rotate(180deg);
+}
+
+.menu-parent.opened .submenu{
+    display: block !important;
+}
+
+@media(max-width: 768px){
+    .menu{
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s linear;
+        height: calc(100vh - 70px);
+    }
+
+    .menu.opened{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+
+.title{
+    @apply text-[22px] md:text-[28px] leading-[32px] font-bold;
+}
+
+.button-primary {
+    @apply uppercase text-sm py-3 px-5 bg-orange rounded-lg text-white hover:bg-[#D9481C] transition-all;
+}
+.button-outline{
+    @apply uppercase text-sm py-3 px-5 text-body border border-body rounded-lg hover:text-white hover:bg-body transition-all;
+}
+
+.button--with-icon{
+    @apply flex items-center w-max gap-3;
+}
+
+.arrow{
+    @apply p-3 border rounded-xl border-[#171A20] hover:bg-[#F5F5F4] transition-all;
+}
+.arrow-fill{
+    @apply p-3 rounded-xl bg-orange w-max;
+}
+
+.development-slide{
+    @apply min-h-[185px] bg-cover bg-center bg-no-repeat p-5 bg-primary rounded-xl flex flex-col justify-end shadow-md;
+}
+
+.pagination{
+    width: max-content !important;
+}
+
+.footer-text{
+    @apply text-xs leading-4 text-[#F3F4F6] font-light
+}
+
+.footer-menu__link{
+    @apply text-xs text-white leading-4 transition-all hover:opacity-75
+}
+
+.page-title{
+    @apply text-2xl md:text-[40px] mb-10 mt-8 md:mt-12 text-[#171A20] font-bold;
+}
+
+.step-title, .subtitle{
+    @apply text-2xl md:text-[28px] flex md:items-center gap-4 font-bold mb-5 md:mb-6;
+}
+.step-title--sm{
+    @apply text-[22px] flex items-center gap-4 font-bold mb-5 md:mb-6;
+}
+
+@media(max-width: 1024px){
+    .pagination{
+        left: 50% !important;
+        top: 30px !important;
+    }
+}
+
+.step-nav__item--active{
+    color: #D9481C;
+}
+
+.step-nav__item--active svg .step-status{
+    fill: #E55E33;
+}
+
+.steps-nav{
+    position: relative;
+    
+}
+.steps-nav svg{
+    position: relative;
+    z-index: 2;
+}
+.steps-nav::before{
+    content: '';
+    position: absolute;
+    height: calc(100% - 20px);
+    left: 10px;
+    background: #DDDDDD;
+    width: 2px;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.step-pagination{
+    display: flex;
+    gap: 16px;
+}
+.step-pagination .circle{
+    width: 8px;
+    height: 8px;
+    background: #B6B6B6;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .step-pagination .circle{
+        display: none;
+    }
+}
+
+.step-pagination .circle.active{
+    background: #3185FC;
+}
+
+@media(max-width: 540px){
+    .additions-img > div:nth-child(n + 5){
+        display: none;
+    }
+
+    .additions-img.opened > div{
+        display: block !important;
+    }
+}
+
+.additiona-slider__pagination .swiper-pagination-bullet-active, .patents__slider-pagination .swiper-pagination-bullet-active{
+    background: #E55E33 !important;
+}
+
+.orange-pagination .swiper-pagination-bullet-active{
+    background: #E55E33 !important;
+}
+
+.news-card__title{
+    @apply font-bold text-[22px] md:text-[28px] leading-9 mb-2 md:mb-3;
+}
+
+
+.button-disabled{
+    pointer-events: none;
+    background: #FFD4C7;
+}
+@media(max-width: 768px){
+    .mass-media .swiper, .publications .swiper{
+        overflow: visible !important;
+    }
+}
+
+.step-slider__subslider{
+    position: relative;
+}
+
+.step-slider__subslider .arrow-fill{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.step-slider__subslider .right{
+    right: 10px;
+    z-index: 20;
+}
+.step-slider__subslider .left{
+    left: 10px;
+    z-index: 20;
+}
+
+.swiper-button-disabled{
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+}
+
+.documents-slide__title{
+    @apply flex flex-col justify-end min-h-[36px] text-[15px] text-title leading-5 font-semibold mb-3;
+}
+
+
+
+
+.view{
+    @apply flex justify-center items-center w-8 h-8 opacity-30 bg-[#393C41] hover:bg-orange hover:opacity-100 transition-all rounded-full absolute right-3 bottom-3;
+}
+
+.document-slide__subtitle{
+    @apply text-sm text-details leading-4 min-h-[60px] mt-3;
+}
+
+@media(max-width: 540px){
+    .documents-slider,  .awards__slider, .documents-slider--mobile{
+        overflow: visible;
+        max-width: 185px;
+        margin-left: 0;
+    }
+   
+}
+
+
+
