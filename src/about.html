@@ -12,177 +12,179 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 <body class="color-[#171A20;]">
 
 
-<header class="header bg-primary">
-    <div class="container ">
-        <div class="header__inner flex justify-between items-center py-5 md:py-4">
-            <img src="../dist/img/logo.png" alt="" class="logo max-w-[150px] md:max-w-none mr-10">
+    <header class="header bg-primary">
+        <div class="container ">
+            <div class="header__inner flex justify-between items-center py-5 md:py-4">
+                 <a href="index.html">
+                    <img src="../dist/img/logo.png" alt="" class="logo max-w-[150px] md:max-w-none mr-10">
+                </a>
 
 
-            <div class="menu flex md:items-center md:static fixed py-12  md:py-0 top-[72px] left-0 z-10 md:flex-row flex-col md:bg-transparent bg-[#2B313B] w-full h-screen overflow-auto md:h-auto md:w-auto">
-                <div class="group menu-parent inline-block md:mr-6">
-                    <button class="outline-none focus:outline-none px-3 py-1  rounded-sm flex items-center min-w-32 gap-2 text-white md:text-black mb-2 md:mb-0">
-                        <span class="pr-1 font-semibold flex-1   text-xl md:text-base">О компании </span>
-                        <span>
-                            <svg class="fill-current h-4 w-4 mt-1 transform md:group-hover:-rotate-180
-                          transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
-                        </span>
-                    </button>
-                    <ul class="submenu">
-                        <li class="menu-item"> <a href="">Новости</a></li>
-                        <li class="menu-item"> <a href="">Цели и задачи</a></li>
-                        <li class="menu-item"> <a href="">О технологии</a></li>
-                        <li class="menu-item"> <a href="">Документы</a></li>
-                        <li class="menu-item"> <a href="">Инвестирование</a></li>
-                        <li class="menu-item"> <a href="">История строительства ПКТБ</a></li>
-                    </ul>
-                </div>
-
-
-                <div class="group menu-parent inline-block md:mr-6">
-                    <button class="outline-none focus:outline-none  px-3 py-1  rounded-sm flex items-center min-w-32 gap-2 text-white md:text-black mb-2 md:mb-0">
-                        <span class="pr-1 font-semibold flex-1   text-xl md:text-base ">Клиентам </span>
-                        <span>
-                            <svg class="fill-current h-4 w-4 mt-1 transform md:group-hover:-rotate-180
-                          transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
-                        </span>
-                    </button>
-                    <ul class="submenu ">
-                        <li class="menu-item"> <a href="">Услуги</a></li>
-                        <li class="menu-item"> <a href="">Этапы работы <br> с клиентом</a></li>
-                        <li class="menu-item"> <a href="">Продукция</a></li>
-                        <li class="menu-item"> <a href="">Партнёры</a></li>
-                        <li class="menu-item"> <a href="">Наши мощности</a></li>
-                    </ul>
-                </div>
-
-                <div class="group menu-parent inline-block">
-                    <button class="outline-none focus:outline-none  px-3 py-1  rounded-sm flex items-center min-w-32 gap-2 text-white md:text-black mb-2 md:mb-0">
-                        <span class="pr-1 font-semibold flex-1  text-xl md:text-base">Контакты </span>
-                        <span>
-                            <svg class="fill-current h-4 w-4 mt-1 transform md:group-hover:-rotate-180
-                          transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                            </svg>
-                        </span>
-                    </button>
-                    <ul class="submenu">
-                        <li class="menu-item"> <a href="">Документы</a></li>
-                        <li class="menu-item"> <a href="">Контакты</a></li>
-                      
-                    </ul>
-                </div>
-            </div>
-           
-
-
-            <button class="language flex items-center relative ml-auto">
-                <div class="icon p-2 rounded-xl bg-white mr-2">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10 18C5.58857 18 2 14.4177 2 10.0141C2 5.61044 5.58865 2.02808 10 2.02808C14.4113 2.02808 18 5.61044 18 10.0141C17.9772 14.4177 14.4113 18 10 18ZM10 3.3971C6.34278 3.3971 3.37143 6.36336 3.37143 10.0141C3.37143 13.6649 6.3429 16.631 10 16.631C13.6572 16.631 16.6286 13.6647 16.6286 10.0141C16.6286 6.36324 13.6573 3.3971 10 3.3971Z"
-                            fill="#E55E33" />
-                        <path
-                            d="M9.99987 18C9.8398 18 9.65708 17.9315 9.54277 17.8174C5.22277 13.9158 4.87992 7.27592 8.78849 2.9635C9.01712 2.7125 9.26857 2.46152 9.54277 2.21053C9.81701 1.95954 10.2513 2.00522 10.5028 2.27897C10.7314 2.55273 10.7085 2.94058 10.48 3.19157C6.68565 6.59136 6.38854 12.3869 9.77128 16.1517C9.97696 16.3799 10.2056 16.608 10.457 16.8362C10.7313 17.0872 10.7542 17.5208 10.5028 17.7945C10.3657 17.9087 10.1828 17.9999 9.99994 17.9999L9.99987 18Z"
-                            fill="#E55E33" />
-                        <path
-                            d="M10 18C9.63426 18 9.31426 17.7033 9.31426 17.3154C9.31426 17.1329 9.38282 16.9503 9.51994 16.8135C13.2913 13.4137 13.5885 7.61818 10.2057 3.87619C10 3.64795 9.77137 3.41988 9.51994 3.19163C9.2457 2.94064 9.19995 2.53002 9.45138 2.23332C9.70281 1.95956 10.1142 1.91388 10.4114 2.16488L10.4571 2.21056C14.7771 6.11219 15.0971 12.752 11.2114 17.0645C10.9828 17.3155 10.7313 17.5664 10.4571 17.8174C10.3428 17.9316 10.1601 18 10 18L10 18Z"
-                            fill="#E55E33" />
-                        <path
-                            d="M16.7659 13.1399H3.21158C2.84583 13.1399 2.52582 12.8432 2.52582 12.4553C2.52582 12.0674 2.82302 11.7708 3.21158 11.7708H16.7659C17.1316 11.7708 17.4516 12.0674 17.4516 12.4553C17.4516 12.8433 17.1546 13.1399 16.766 13.1399H16.7659Z"
-                            fill="#E55E33" />
-                        <path
-                            d="M16.7659 8.25705H3.21158C2.84583 8.25705 2.52582 7.96037 2.52582 7.57249C2.52582 7.18461 2.82302 6.88794 3.21158 6.88794H16.7659C17.1316 6.88794 17.4516 7.18461 17.4516 7.57249C17.4516 7.96052 17.1546 8.25705 16.766 8.25705H16.7659Z"
-                            fill="#E55E33" />
-                    </svg>
-                </div>
-
-                <span class="text-dark text-xs font-medium md:text-base language-value">Россия</span>
-
-                <svg class="close hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 18L18 6M6 6L18 18" stroke="#EA5E20" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-
-
-                <div id="dropdown"
-                    class="z-10 absolute md:top-[40px] top-[70px]  right-0 bg-white divide-y divide-gray-100 rounded-lg shadow w-36 ">
-                    <ul class="py-2 text-sm text-gray-700">
-                        <li>
-                            <a href="#"
-                                class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink  text-right hover:text-orange"
-                                data-value="Русский">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
+                <div class="menu flex md:items-center md:static fixed py-12  md:py-0 top-[72px] left-0 z-10 md:flex-row flex-col md:bg-transparent bg-[#2B313B] w-full h-screen overflow-auto md:h-auto md:w-auto">
+                    <div class="group menu-parent inline-block md:mr-6">
+                        <button class="outline-none focus:outline-none px-3 py-1  rounded-sm flex items-center min-w-32 gap-2 text-white md:text-black mb-2 md:mb-0">
+                            <span class="pr-1 font-semibold flex-1   text-xl md:text-base">О компании </span>
+                            <span>
+                                <svg class="fill-current h-4 w-4 mt-1 transform md:group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                                 </svg>
-                                Русский
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink text-right hover:text-orange"
-                                data-value="English">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
-                                </svg>
-
-                                English
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink  text-right hover:text-orange"
-                                data-value="Deutsch">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
-                                </svg>
-
-                                Deutsch
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink text-right hover:text-orange"
-                                data-value="Français">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
-                                </svg>
-
-                                Français
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </button>
-
-            <div class=" flex flex-col justify-center ml-5 md:hidden">
-                <div class="relative ">
-                    <nav class="burger "x-data="{ open: false }">
-                        <button class="text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
-                            <span class="sr-only">Open main menu</span>
-                            <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-                                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                                <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                                <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-                            </div>
+                            </span>
                         </button>
-                    </nav>
+                        <ul class="submenu">
+                            <li class="menu-item"> <a href="news.html">Новости</a></li>
+                            <li class="menu-item"> <a href="">Цели и задачи</a></li>
+                            <li class="menu-item"> <a href="about.html">О технологии</a></li>
+                            <li class="menu-item"> <a href="documents.html">Документы</a></li>
+                            <li class="menu-item"> <a href="Investment.html">Инвестирование</a></li>
+                            <li class="menu-item"> <a href="">История строительства ПКТБ</a></li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="group menu-parent inline-block md:mr-6">
+                        <button class="outline-none focus:outline-none  px-3 py-1  rounded-sm flex items-center min-w-32 gap-2 text-white md:text-black mb-2 md:mb-0">
+                            <span class="pr-1 font-semibold flex-1   text-xl md:text-base ">Клиентам </span>
+                            <span>
+                                <svg class="fill-current h-4 w-4 mt-1 transform md:group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="submenu ">
+                            <li class="menu-item"> <a href="services.html">Услуги</a></li>
+                            <li class="menu-item"> <a href="steps.html">Этапы работы <br> с клиентом</a></li>
+                            <li class="menu-item"> <a href="product.html">Продукция</a></li>
+                            <li class="menu-item"> <a href="partners.html">Партнёры</a></li>
+                            <li class="menu-item"> <a href="">Наши мощности</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="group menu-parent inline-block">
+                        <button class="outline-none focus:outline-none  px-3 py-1  rounded-sm flex items-center min-w-32 gap-2 text-white md:text-black mb-2 md:mb-0">
+                            <span class="pr-1 font-semibold flex-1  text-xl md:text-base">Контакты </span>
+                            <span>
+                                <svg class="fill-current h-4 w-4 mt-1 transform md:group-hover:-rotate-180
+                              transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="submenu">
+                            <li class="menu-item"> <a href="documents.html">Документы</a></li>
+                            <li class="menu-item"> <a href="">Контакты</a></li>
+                          
+                        </ul>
+                    </div>
                 </div>
-            </div>
+               
 
+
+                <button class="language flex items-center relative ml-auto">
+                    <div class="icon p-2 rounded-xl bg-white mr-2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 18C5.58857 18 2 14.4177 2 10.0141C2 5.61044 5.58865 2.02808 10 2.02808C14.4113 2.02808 18 5.61044 18 10.0141C17.9772 14.4177 14.4113 18 10 18ZM10 3.3971C6.34278 3.3971 3.37143 6.36336 3.37143 10.0141C3.37143 13.6649 6.3429 16.631 10 16.631C13.6572 16.631 16.6286 13.6647 16.6286 10.0141C16.6286 6.36324 13.6573 3.3971 10 3.3971Z"
+                                fill="#E55E33" />
+                            <path
+                                d="M9.99987 18C9.8398 18 9.65708 17.9315 9.54277 17.8174C5.22277 13.9158 4.87992 7.27592 8.78849 2.9635C9.01712 2.7125 9.26857 2.46152 9.54277 2.21053C9.81701 1.95954 10.2513 2.00522 10.5028 2.27897C10.7314 2.55273 10.7085 2.94058 10.48 3.19157C6.68565 6.59136 6.38854 12.3869 9.77128 16.1517C9.97696 16.3799 10.2056 16.608 10.457 16.8362C10.7313 17.0872 10.7542 17.5208 10.5028 17.7945C10.3657 17.9087 10.1828 17.9999 9.99994 17.9999L9.99987 18Z"
+                                fill="#E55E33" />
+                            <path
+                                d="M10 18C9.63426 18 9.31426 17.7033 9.31426 17.3154C9.31426 17.1329 9.38282 16.9503 9.51994 16.8135C13.2913 13.4137 13.5885 7.61818 10.2057 3.87619C10 3.64795 9.77137 3.41988 9.51994 3.19163C9.2457 2.94064 9.19995 2.53002 9.45138 2.23332C9.70281 1.95956 10.1142 1.91388 10.4114 2.16488L10.4571 2.21056C14.7771 6.11219 15.0971 12.752 11.2114 17.0645C10.9828 17.3155 10.7313 17.5664 10.4571 17.8174C10.3428 17.9316 10.1601 18 10 18L10 18Z"
+                                fill="#E55E33" />
+                            <path
+                                d="M16.7659 13.1399H3.21158C2.84583 13.1399 2.52582 12.8432 2.52582 12.4553C2.52582 12.0674 2.82302 11.7708 3.21158 11.7708H16.7659C17.1316 11.7708 17.4516 12.0674 17.4516 12.4553C17.4516 12.8433 17.1546 13.1399 16.766 13.1399H16.7659Z"
+                                fill="#E55E33" />
+                            <path
+                                d="M16.7659 8.25705H3.21158C2.84583 8.25705 2.52582 7.96037 2.52582 7.57249C2.52582 7.18461 2.82302 6.88794 3.21158 6.88794H16.7659C17.1316 6.88794 17.4516 7.18461 17.4516 7.57249C17.4516 7.96052 17.1546 8.25705 16.766 8.25705H16.7659Z"
+                                fill="#E55E33" />
+                        </svg>
+                    </div>
+
+                    <span class="text-dark text-xs font-medium md:text-base language-value">Россия</span>
+
+                    <svg class="close hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke="#EA5E20" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+
+                    <div id="dropdown"
+                        class="z-10 absolute md:top-[40px] top-[70px]  right-0 bg-white divide-y divide-gray-100 rounded-lg shadow w-36 ">
+                        <ul class="py-2 text-sm text-gray-700">
+                            <li>
+                                <a href="#"
+                                    class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink  text-right hover:text-orange selected"
+                                    data-value="Русский">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
+                                    </svg>
+                                    Русский
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink text-right hover:text-orange"
+                                    data-value="English">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
+                                    </svg>
+
+                                    English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink  text-right hover:text-orange"
+                                    data-value="Deutsch">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
+                                    </svg>
+
+                                    Deutsch
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center gap-3 justify-between px-4 py-2 hover:bg-light-pink text-right hover:text-orange"
+                                    data-value="Français">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 12.4L3 8.4L4.4 7L7 9.6L12.6 4L14 5.4L7 12.4Z" fill="#E55E33" />
+                                    </svg>
+
+                                    Français
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </button>
+
+                <div class=" flex flex-col justify-center ml-5 md:hidden">
+                    <div class="relative ">
+                        <nav class="burger "x-data="{ open: false }">
+                            <button class="text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
+                                <span class="sr-only">Open main menu</span>
+                                <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                                    <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                                    <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                                </div>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 
 
@@ -432,9 +434,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2627 23.7898C21.2627 23.4411 21.5456 23.1582 21.8943 23.1582H25.0521C25.401 23.1582 25.6837 23.4411 25.6837 23.7898C25.6837 24.1385 25.401 24.4215 25.0521 24.4215H22.526V26.3162H24.4207C24.7694 26.3162 25.0521 26.5989 25.0521 26.9476C25.0521 27.2965 24.7694 27.5792 24.4207 27.5792H22.526V28.8423C22.526 29.1912 22.243 29.4739 21.8943 29.4739C21.5456 29.4739 21.2627 29.1912 21.2627 28.8423V23.7898Z" fill="#3185FC" stroke="#3185FC" stroke-width="0.4"/>
                     </svg>
     
-                    <div class="lg:pl-5 lg:ml-5 lg:border-l-4 border-active-orange">
+                    <div class="lg:pl-5 lg:ml-5 lg:border-l-4 border-active-orange flex flex-col h-full justify-between">
                         <span class="pl-5 ml-5 lg:m-0 lg:p-0 text-lg font-semibold leading-5 border-l-2 border-active-orange lg:border-none block">Устройство и изучение гибридных обмоток <br> типа «звезда»</span>
-                        <div class="pl-5 ml-5 lg:m-0 lg:p-0 flex mt-3 flex-col lg:items-end lg:flex-row gap-3 lg:gap-0 min-h-[48px]">
+                        <div class="pl-5 ml-5 lg:m-0 lg:p-0 flex flex-col lg:items-end lg:flex-row gap-3 lg:gap-0 min-h-[48px]">
                             <p class="text-xs color-[#5C5E62] pr-8 mt-3 ">
                                 Авторы: Henning Kasten, Wilfried Hofmann 2011г.
                             </p>
@@ -560,10 +562,10 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 </div>
 
 
-<footer class=" bg-[#2B313B] pb-14 pt-6 md:py-16">
+<footer class="mt-16 bg-[#2B313B] pb-14 pt-6 md:py-16">
     <div class="container">
         <div class="flex md:justify-between gap-6 flex-col md:flex-row">
-            <div class="max-w-[190px] w-full flex flex-col h-full">
+            <div class="max-w-[210px] w-full flex flex-col ">
                 <a href="">
                     <img src="../dist/img/logo-white.svg" alt="logo">
                 </a>
@@ -598,7 +600,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
                     </a>
                 </div>
 
-                <p class="footer-text mt-auto">© ООО «Совэлмаш» 2017-2022</p>
+                <p class="footer-text mt-auto hidden md:block">© ООО «Совэлмаш» 2017-2022</p>
             </div>
 
 
@@ -607,19 +609,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
                     <span class="uppercase text-light-orange text-sm">О компании </span>
                     <ul class="pt-3">
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Новости</a>
+                            <a href="news.html" class="footer-menu__link">Новости</a>
                         </li>
                         <li class="mb-2">
                             <a href="" class="footer-menu__link">Цели и задачи</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">О технологии</a>
+                            <a href="about.html" class="footer-menu__link">О технологии</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Документы</a>
+                            <a href="documents.html" class="footer-menu__link">Документы</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Инвестирование</a>
+                            <a href="Investment.html" class="footer-menu__link">Инвестирование</a>
                         </li>
                         <li class="mb-2">
                             <a href="" class="footer-menu__link">История строительства <br> ПКТБ</a>
@@ -632,16 +634,16 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
                     <span class="uppercase text-light-orange text-sm">КЛИЕНТАМ</span>
                     <ul class="pt-3">
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Услуги</a>
+                            <a href="services.html" class="footer-menu__link">Услуги</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Этапы работы <br> с клиентом</a>
+                            <a href="steps.html" class="footer-menu__link">Этапы работы <br> с клиентом</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Продукция</a>
+                            <a href="product.html" class="footer-menu__link">Продукция</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Партнёры</a>
+                            <a href="partners.html" class="footer-menu__link">Партнёры</a>
                         </li>
                         <li class="mb-2">
                             <a href="" class="footer-menu__link">Наши мощности</a>
@@ -655,7 +657,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
                     <span class="uppercase text-light-orange text-sm">КОНТАКТЫ</span>
                     <ul class="pt-3">
                         <li class="mb-2">
-                            <a href="" class="footer-menu__link">Документы</a>
+                            <a href="documents.html" class="footer-menu__link">Документы</a>
                         </li>
                         <li class="mb-2">
                             <a href="" class="footer-menu__link">Контакты</a>
@@ -666,24 +668,29 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
                 </div>
             </div>
 
-            <div class="md:max-w-[190px] w-full pt-7 md:pt-0">
+            <div class="md:max-w-[210px] w-full pt-7 md:pt-0">
                 <p class="footer-text">
                     <span class="text-light-orange leading-8">Адрес:</span>  124460, г. Москва, <br > г. Зеленоград,Панфиловский <br class="hidden md:block"> проспект, д.10
                 </p>
-                <p class="footer-text mt-10 md:mt-2 leading-8">
+                <p class="footer-text mt-10 md:mt-4 leading-8">
                     <span class="text-light-orange">Телефон:</span>  +7 (495) 228-68-72
                 </p>
-                <p class="footer-text mt-10 md:mt-2 leading-8">
+                <p class="footer-text mt-10 md:mt-4 leading-8">
                      <span class="text-light-orange">Email:</span> <br> sales@sovelmash.ru <br> info@sovelmash.ru <br> jin@sovelmash.ru
                 </p>
 
-                <p class="footer-text mt-10 md:mt-2 leading-8">
+                <p class="footer-text mt-10 md:mt-4 leading-8">
                      <span class="text-light-orange"> Режим работы:</span> <br>
                     Понедельник-пятница: <br> с 9:00 до 18:00 <br>
                     Суббота, воскресенье: <br> выходные дни
                 </p>
                
             </div>
+
+
+            <p class="footer-text md:hidden mt-5">© ООО «Совэлмаш» 2017-2022</p>
+
+
         </div>
     </div>
 </footer>
