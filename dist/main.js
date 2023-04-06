@@ -113,11 +113,56 @@ if(document.querySelector(".swiper-development")){
 }
 
 
+if(document.querySelector(".swiper-development2")){
+    const swiperDevelopment = new Swiper('.swiper-development2', {
+
+        slidesPerView: 6,
+        spaceBetween: 24,
+      
+        pagination: {
+            el: '.dev-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+    
+        // Navigation arrows
+        navigation: {
+            nextEl: '.development-header .arrow-right',
+            prevEl: '.development-header .arrow-left',
+        },
+    
+        breakpoints:{
+            0:{
+                slidesPerView: 1,
+            },
+    
+            540:{
+                slidesPerView: 3,
+            },
+            768:{
+                slidesPerView: 4,
+            },
+    
+            1024:{
+                slidesPerView: 5
+            },
+            1200:{
+                slidesPerView: 6
+            }
+        }
+    
+    });
+}
+
 
 document.querySelectorAll(".step-slider").forEach((slider,index) => {
     slider.closest(".step-content").classList.add(`slider-${index}`);
-    console.log(document.querySelector(`.slider-${index} .step-slider__pagination`))
-    console.log(`.slider-${index} .step-slider__pagination`)
+    document.querySelectorAll(`.slider-${index} [data-text]`).forEach(function(item, index){
+        if(index != 0){
+            item.style.display = "none";
+        }
+    });
+   
     new Swiper(slider, {
         slidesPerView: 1,
         autoheight: true,
@@ -144,8 +189,32 @@ document.querySelectorAll(".step-slider").forEach((slider,index) => {
                     type: 'fraction'
                 },
             }
-            
-        }
+        },
+
+        on: {
+            slideChange: function () {
+                // Получение индекса текущего слайда
+                var activeIndex = this.activeIndex;
+        
+                // Получение всех элементов с классом slide-text
+                var slideTexts = document.querySelectorAll(`.slider-${index} [data-text]`);
+        
+                // Перебор элементов slide-text
+                slideTexts.forEach(function(slideText) {
+                // Получение значения атрибута data-text элемента
+                var textIndex = slideText.getAttribute('data-text');
+                
+                // Если индекс элемента совпадает с индексом активного слайда,
+                // то отображаем его, иначе скрываем
+                if (textIndex == activeIndex + 1) {
+                    slideText.style.display = 'block';
+                } else {
+                    slideText.style.display = 'none';
+                }
+                });
+            },
+        },
+
     });
 })
 
@@ -255,7 +324,11 @@ if(document.querySelector(".mass-media .swiper")){
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            991:{
+            1024:{
+                slidesPerView: 3,
+                spaceBetween: 24
+            },
+            1200:{
                 slidesPerView: 4,
                 spaceBetween: 24
             }
@@ -359,16 +432,20 @@ if(document.querySelector(".documents-slider--mobile")){
     
             breakpoints:{
                 0:{
-                    slidesPerView: 1
+                    slidesPerView: 1,
+                    spaceBetween: 16,
                 },
                 540:{
-                    slidesPerView: 3
+                    slidesPerView: 3,
+                    spaceBetween: 16,
                 },
                 991:{
                     slidesPerView: 4,
+                    spaceBetween: 16,
                 },
                 1200:{
-                    slidesPerView: 6
+                    slidesPerView: 6,
+                    spaceBetween: 24
                 }
             }
            
