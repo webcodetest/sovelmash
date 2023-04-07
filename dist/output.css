@@ -769,8 +769,8 @@ video {
   height: 180px;
 }
 
-.h-\[360px\] {
-  height: 360px;
+.h-\[380px\] {
+  height: 380px;
 }
 
 .h-auto {
@@ -788,10 +788,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[380px\] {
-  height: 380px;
 }
 
 .max-h-10 {
@@ -885,10 +881,6 @@ video {
 
 .max-w-\[185px\] {
   max-width: 185px;
-}
-
-.max-w-\[190px\] {
-  max-width: 190px;
 }
 
 .max-w-\[210px\] {
@@ -1820,7 +1812,7 @@ body, button, input, textarea, a, span, p, div{
   display: block !important;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
   .menu{
     opacity: 0;
     visibility: hidden;
@@ -1851,6 +1843,7 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .button-primary {
+  max-height: 40px;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(229 94 51 / var(--tw-bg-opacity));
@@ -1863,6 +1856,7 @@ body, button, input, textarea, a, span, p, div{
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  text-underline-offset: 4px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1873,13 +1867,18 @@ body, button, input, textarea, a, span, p, div{
   background-color: rgb(217 72 28 / var(--tw-bg-opacity));
 }
 
+.button-primary:active {
+  text-decoration-line: underline;
+}
+
 .button-outline {
+  display: flex;
+  height: 40px;
+  align-items: center;
   border-radius: 0.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(57 60 65 / var(--tw-border-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   font-size: 0.875rem;
@@ -1887,6 +1886,7 @@ body, button, input, textarea, a, span, p, div{
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(57 60 65 / var(--tw-text-opacity));
+  text-underline-offset: 4px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1894,9 +1894,11 @@ body, button, input, textarea, a, span, p, div{
 
 .button-outline:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(57 60 65 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
+
+.button-outline:active {
+  text-decoration-line: underline;
 }
 
 .button--with-icon {
@@ -1932,6 +1934,29 @@ body, button, input, textarea, a, span, p, div{
   padding: 0.75rem;
 }
 
+.hover-link {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(23 26 32 / var(--tw-text-opacity));
+  text-underline-offset: 4px;
+}
+
+.hover-link:hover {
+  text-decoration-line: underline;
+}
+
 .development-slide {
   display: flex;
   min-height: 185px;
@@ -1956,10 +1981,11 @@ body, button, input, textarea, a, span, p, div{
 
 .footer-text {
   font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 300;
-  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+  line-height: 18px !important;
 }
 
 .footer-menu__link {
@@ -1978,7 +2004,7 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .footer-menu__link{
-  line-height: 22px !important;
+  line-height: 18px !important;
 }
 
 .page-title {
@@ -2314,10 +2340,6 @@ body, button, input, textarea, a, span, p, div{
     margin-bottom: 1rem;
   }
 
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
-  }
-
   .md\:ml-auto {
     margin-left: auto;
   }
@@ -2334,12 +2356,12 @@ body, button, input, textarea, a, span, p, div{
     margin-top: 3.5rem;
   }
 
-  .md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .md\:mt-28 {
     margin-top: 7rem;
+  }
+
+  .md\:mt-4 {
+    margin-top: 1rem;
   }
 
   .md\:mt-5 {
@@ -2352,10 +2374,6 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .md\:mt-4 {
-    margin-top: 1rem;
   }
 
   .md\:block {
@@ -2392,10 +2410,6 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:max-w-\[160px\] {
     max-width: 160px;
-  }
-
-  .md\:max-w-\[190px\] {
-    max-width: 190px;
   }
 
   .md\:max-w-\[210px\] {
