@@ -158,7 +158,7 @@ body, button, input, textarea, a, span, p, div{
     display: block !important;
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
     .menu{
         opacity: 0;
         visibility: hidden;
@@ -182,10 +182,10 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .button-primary {
-    @apply uppercase text-sm py-3 px-5 bg-orange rounded-lg text-white hover:bg-[#D9481C] transition-all;
+    @apply uppercase text-sm py-3 px-5 bg-orange rounded-lg text-white hover:bg-[#D9481C] active:underline underline-offset-4 transition-all max-h-[40px];
 }
 .button-outline{
-    @apply uppercase text-sm py-3 px-5 text-body border border-body rounded-lg hover:text-white hover:bg-body transition-all;
+    @apply uppercase text-sm px-5 text-body border border-body rounded-lg  transition-all hover:bg-[#F5F5F4] active:underline underline-offset-4 h-[40px] flex items-center;
 }
 
 .button--with-icon{
@@ -199,6 +199,10 @@ body, button, input, textarea, a, span, p, div{
     @apply p-3 rounded-xl bg-orange w-max;
 }
 
+.hover-link{
+    @apply flex w-max items-center gap-3 text-sm text-title py-2 px-3 mx-auto  hover:underline underline-offset-4;
+}
+
 .development-slide{
     @apply min-h-[185px] bg-cover bg-center bg-no-repeat p-5 bg-primary rounded-xl flex flex-col justify-end shadow-md;
 }
@@ -208,12 +212,13 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .footer-text{
-    @apply text-sm leading-4 text-[#F3F4F6] font-light
+    @apply text-sm  text-[#F3F4F6] font-light;
+    line-height: 18px !important;
 }
 
 .footer-menu__link{
     @apply text-sm text-white inline-block transition-all hover:opacity-75;
-    line-height: 22px !important;
+    line-height: 18px !important;
 }
 
 .page-title{
