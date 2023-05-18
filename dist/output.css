@@ -802,8 +802,20 @@ video {
   max-height: 20rem;
 }
 
+.max-h-\[337px\] {
+  max-height: 337px;
+}
+
+.max-h-\[355px\] {
+  max-height: 355px;
+}
+
 .max-h-\[480px\] {
   max-height: 480px;
+}
+
+.max-h-\[315px\] {
+  max-height: 315px;
 }
 
 .min-h-\[30px\] {
@@ -1159,6 +1171,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F9F8FC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 248 252 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/dist\/img\/development\.jpg\'\)\] {
   background-image: url('../dist/img/development.jpg');
 }
@@ -1332,6 +1349,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
 }
 
 .text-center {
@@ -1532,6 +1553,10 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -2265,6 +2290,10 @@ body, button, input, textarea, a, span, p, div{
   color: rgb(229 94 51 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-60:hover {
+  opacity: 0.6;
+}
+
 .hover\:opacity-70:hover {
   opacity: 0.7;
 }
@@ -2307,6 +2336,10 @@ body, button, input, textarea, a, span, p, div{
 
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 }
 
