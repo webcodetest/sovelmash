@@ -355,9 +355,15 @@ body, button, input, textarea, a, span, p, div{
 
 
 .view{
-    @apply flex justify-center items-center w-8 h-8 opacity-30 bg-[#393C41] hover:bg-orange hover:opacity-100 transition-all rounded-full absolute right-3 bottom-3;
+    @apply flex justify-center items-center w-8 h-8  bg-[#393C41] hover:bg-orange hover:opacity-100 transition-all rounded-full absolute right-3 bottom-3;
 }
 
+.view{
+    background: #393c4173;
+}
+.view:hover{
+    background: #393C41;
+}
 .document-slide__subtitle{
     @apply text-sm text-details leading-4 min-h-[60px] mt-3;
 }
@@ -372,4 +378,7 @@ body, button, input, textarea, a, span, p, div{
 }
 
 
+.goals-text{
+    line-height: 22px !important;
+}
 
