@@ -2464,6 +2464,14 @@ body, button, input, textarea, a, span, p, div{
     width: auto;
   }
 
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
   .md\:max-w-5xl {
     max-width: 64rem;
   }
@@ -2486,6 +2494,10 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:max-w-none {
     max-width: none;
+  }
+
+  .md\:max-w-\[495px\] {
+    max-width: 495px;
   }
 
   .md\:grid-cols-2 {
