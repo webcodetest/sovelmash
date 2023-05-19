@@ -802,6 +802,10 @@ video {
   max-height: 20rem;
 }
 
+.max-h-\[315px\] {
+  max-height: 315px;
+}
+
 .max-h-\[337px\] {
   max-height: 337px;
 }
@@ -812,10 +816,6 @@ video {
 
 .max-h-\[480px\] {
   max-height: 480px;
-}
-
-.max-h-\[315px\] {
-  max-height: 315px;
 }
 
 .min-h-\[30px\] {
@@ -832,6 +832,14 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-36 {
@@ -909,6 +917,10 @@ video {
 
 .max-w-\[290px\] {
   max-width: 290px;
+}
+
+.max-w-\[495px\] {
+  max-width: 495px;
 }
 
 .max-w-\[535px\] {
@@ -1157,6 +1169,11 @@ video {
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F9F8FC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 248 252 / var(--tw-bg-opacity));
+}
+
 .bg-current {
   background-color: currentColor;
 }
@@ -1169,11 +1186,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F9F8FC\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 248 252 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/dist\/img\/development\.jpg\'\)\] {
@@ -2241,7 +2253,6 @@ body, button, input, textarea, a, span, p, div{
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(57 60 65 / var(--tw-bg-opacity));
-  opacity: 0.3;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -2251,6 +2262,14 @@ body, button, input, textarea, a, span, p, div{
   --tw-bg-opacity: 1;
   background-color: rgb(229 94 51 / var(--tw-bg-opacity));
   opacity: 1;
+}
+
+.view{
+  background: #393c4173;
+}
+
+.view:hover{
+  background: #393C41;
 }
 
 .document-slide__subtitle {
@@ -2268,6 +2287,10 @@ body, button, input, textarea, a, span, p, div{
     max-width: 185px;
     margin-left: 0;
   }
+}
+
+.goals-text{
+  line-height: 22px !important;
 }
 
 .placeholder\:text-black::-moz-placeholder {
@@ -2371,6 +2394,10 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .md\:ml-auto {
@@ -2851,6 +2878,4 @@ body, button, input, textarea, a, span, p, div{
     padding: 2rem;
   }
 }
-
-
 
