@@ -834,14 +834,6 @@ video {
   width: 2.5rem;
 }
 
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
 .w-36 {
   width: 9rem;
 }
@@ -917,10 +909,6 @@ video {
 
 .max-w-\[290px\] {
   max-width: 290px;
-}
-
-.max-w-\[495px\] {
-  max-width: 495px;
 }
 
 .max-w-\[535px\] {
@@ -2290,7 +2278,7 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .goals-text{
-  line-height: 22px !important;
+  line-height: 24px !important;
 }
 
 .placeholder\:text-black::-moz-placeholder {
@@ -2460,16 +2448,16 @@ body, button, input, textarea, a, span, p, div{
     min-height: 95px;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:w-2\/5 {
     width: 40%;
   }
 
   .md\:w-3\/5 {
     width: 60%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:max-w-5xl {
@@ -2484,6 +2472,10 @@ body, button, input, textarea, a, span, p, div{
     max-width: 210px;
   }
 
+  .md\:max-w-\[495px\] {
+    max-width: 495px;
+  }
+
   .md\:max-w-\[550px\] {
     max-width: 550px;
   }
@@ -2494,10 +2486,6 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:max-w-none {
     max-width: none;
-  }
-
-  .md\:max-w-\[495px\] {
-    max-width: 495px;
   }
 
   .md\:grid-cols-2 {
