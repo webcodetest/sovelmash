@@ -713,6 +713,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -913,6 +917,10 @@ video {
 
 .max-w-\[535px\] {
   max-width: 535px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .max-w-full {
@@ -2281,6 +2289,10 @@ body, button, input, textarea, a, span, p, div{
   line-height: 24px !important;
 }
 
+.contact-text{
+  line-height: 22px !important;
+}
+
 .placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2422,6 +2434,10 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:block {
@@ -2654,6 +2670,11 @@ body, button, input, textarea, a, span, p, div{
     line-height: 1.75rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:leading-6 {
     line-height: 1.5rem;
   }
@@ -2878,4 +2899,3 @@ body, button, input, textarea, a, span, p, div{
     padding: 2rem;
   }
 }
-
