@@ -875,6 +875,10 @@ video {
   max-width: 72rem;
 }
 
+.max-w-\[1015px\] {
+  max-width: 1015px;
+}
+
 .max-w-\[1032px\] {
   max-width: 1032px;
 }
@@ -1258,6 +1262,11 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-16 {
@@ -1920,6 +1929,7 @@ body, button, input, textarea, a, span, p, div{
   padding-right: 1.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  font-weight: 500;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(57 60 65 / var(--tw-text-opacity));
@@ -2227,7 +2237,7 @@ body, button, input, textarea, a, span, p, div{
   display: flex;
   min-height: 40px;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.25rem;
@@ -2282,9 +2292,9 @@ body, button, input, textarea, a, span, p, div{
 }
 
 @media(max-width: 540px){
-  .documents-slider,  .awards__slider, .documents-slider--mobile{
+  .documents-slider,  .awards__slider, .documents-slider--mobile, .documents-slider-5{
     overflow: visible;
-    max-width: 185px;
+    max-width: 185px !important;
     margin-left: 0;
   }
 }
