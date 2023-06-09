@@ -185,7 +185,7 @@ body, button, input, textarea, a, span, p, div{
     @apply uppercase text-sm py-3 px-5 bg-orange rounded-lg text-white hover:bg-[#D9481C] active:underline underline-offset-4 transition-all max-h-[40px];
 }
 .button-outline{
-    @apply uppercase text-sm px-5 text-body border border-body rounded-lg  transition-all hover:bg-[#F5F5F4] active:underline underline-offset-4 h-[40px] flex items-center;
+    @apply uppercase text-sm px-5 text-body border border-body rounded-lg  font-medium transition-all hover:bg-[#F5F5F4] active:underline underline-offset-4 h-[40px] flex items-center;
 }
 
 .button--with-icon{
@@ -348,7 +348,7 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .documents-slide__title{
-    @apply flex flex-col justify-end min-h-[40px] text-[15px] text-title leading-5 font-semibold mb-3 lg:min-h-[40px];
+    @apply flex flex-col justify-start min-h-[40px] text-[15px] text-title leading-5 font-semibold mb-3 lg:min-h-[40px];
 }
 
 
@@ -369,9 +369,9 @@ body, button, input, textarea, a, span, p, div{
 }
 
 @media(max-width: 540px){
-    .documents-slider,  .awards__slider, .documents-slider--mobile{
+    .documents-slider,  .awards__slider, .documents-slider--mobile, .documents-slider-5{
         overflow: visible;
-        max-width: 185px;
+        max-width: 185px !important;
         margin-left: 0;
     }
    
