@@ -348,7 +348,7 @@ body, button, input, textarea, a, span, p, div{
 }
 
 .documents-slide__title{
-    @apply flex flex-col justify-end min-h-[36px] text-[15px] text-title leading-5 font-semibold mb-3 lg:min-h-[40px];
+    @apply flex flex-col justify-end min-h-[40px] text-[15px] text-title leading-5 font-semibold mb-3 lg:min-h-[40px];
 }
 
 
@@ -375,6 +375,12 @@ body, button, input, textarea, a, span, p, div{
         margin-left: 0;
     }
    
+}
+
+@media(max-width: 768px){
+    .prevBtnDesktop{
+        display: none !important;
+    }
 }
 
 

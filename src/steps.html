@@ -77,7 +77,6 @@
                             </span>
                         </button>
                         <ul class="submenu">
-                            <li class="menu-item"> <a href="documents.html">Документы</a></li>
                             <li class="menu-item"> <a href="contact.html">Контакты</a></li>
                           
                         </ul>
@@ -234,7 +233,7 @@
             <div class="flex gap-5">
                 <div class="min-w-[185px] max-w-[185px] w-full hidden lg:block">
                     <div class="steps-nav">
-                        <div class="step-nav__item step-nav__item--active flex items-center py-2 mb-2 gap-3">
+                        <div class="step-nav__item cursor-pointer  cur step-nav__item--active flex items-center py-2 mb-2 gap-3">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="11" r="11" fill="#DDDDDD" />
@@ -242,7 +241,7 @@
                             </svg>
                             <span class="text-[15px] font-semibold">Постановка задачи</span>
                         </div>
-                        <div class="step-nav__item flex items-center py-2 mb-2 gap-3">
+                        <div class="step-nav__item cursor-pointer flex items-center py-2 mb-2 gap-3">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="11" r="11" fill="#DDDDDD" />
@@ -250,7 +249,7 @@
                             </svg>
                             <span class="text-[15px] font-semibold">Расчёт</span>
                         </div>
-                        <div class="step-nav__item flex items-center py-2 mb-2 gap-3">
+                        <div class="step-nav__item cursor-pointer flex items-center py-2 mb-2 gap-3">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="11" r="11" fill="#DDDDDD" />
@@ -258,7 +257,7 @@
                             </svg>
                             <span class="text-[15px] font-semibold">Моделирование</span>
                         </div>
-                        <div class="step-nav__item flex items-center py-2 mb-2 gap-3">
+                        <div class="step-nav__item cursor-pointer flex items-center py-2 mb-2 gap-3">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="11" r="11" fill="#DDDDDD" />
@@ -266,7 +265,7 @@
                             </svg>
                             <span class="text-[15px] font-semibold">Проектирование</span>
                         </div>
-                        <div class="step-nav__item flex items-center py-2 mb-2 gap-3">
+                        <div class="step-nav__item cursor-pointer flex items-center py-2 mb-2 gap-3">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="11" r="11" fill="#DDDDDD" />
@@ -274,7 +273,7 @@
                             </svg>
                             <span class="text-[15px] font-semibold">Изготовление</span>
                         </div>
-                        <div class="step-nav__item flex items-center py-2 mb-2 gap-3">
+                        <div class="step-nav__item cursor-pointer flex items-center py-2 mb-2 gap-3">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="11" cy="11" r="11" fill="#DDDDDD" />
@@ -823,10 +822,21 @@
                                 <span class="total"></span>
                             </div>
                         </div>
-                        <a href="" id="prevBtn" class="arrow bg-[#F5F5F4] md:hidden ml-auto mr-5">
+                        <a href="" id="prevBtn2" class="arrow bg-[#F5F5F4] md:hidden ml-auto mr-5">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.65013 8.74303H15.2322C15.6533 8.74303 16 8.39629 16 7.97527C16 7.55425 15.6533 7.20751 15.2322 7.20751H2.65013L5.44895 4.40869C5.74611 4.11152 5.74611 3.61602 5.44895 3.31885C5.15179 3.02168 4.65629 3.02169 4.35912 3.31885L0.222873 7.4551C-0.0742893 7.75226 -0.0742893 8.24776 0.222873 8.54493L4.35912 12.6812C4.65628 12.9783 5.15178 12.9783 5.44895 12.6812C5.74612 12.384 5.74611 11.8885 5.44895 11.5913L2.65013 8.74303Z" fill="#171A20"/>
+                                <path d="M2.65013 8.74303H15.2322C15.6533 8.74303 16 8.39629 16 7.97527C16 7.55425 15.6533 7.20751 15.2322 7.20751H2.65013L5.44895 4.40869C5.74611 4.11152 5.74611 3.61602 5.44895 3.31885C5.15179 3.02168 4.65629 3.02169 4.35912 3.31885L0.222873 7.4551C-0.0742893 7.75226 -0.0742893 8.24776 0.222873 8.54493L4.35912 12.6812C4.65628 12.9783 5.15178 12.9783 5.44895 12.6812C5.74612 12.384 5.74611 11.8885 5.44895 11.5913L2.65013 8.74303Z" fill="#171A20"></path>
                                 </svg>
+                                
+                        </a>
+
+                        <a href="" id="prevBtn" class="button-primary prevBtnDesktop button--with-icon ml-auto mr-5" style="display: none;">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.65013 7.25721H15.2322C15.6533 7.25721 16 7.60395 16 8.02497C16 8.44599 15.6533 8.79273 15.2322 8.79273H2.65013L5.44895 11.5916C5.74611 11.8887 5.74611 12.3842 5.44895 12.6814C5.15179 12.9786 4.65629 12.9785 4.35912 12.6814L0.222872 8.54514C-0.0742905 8.24798 -0.0742905 7.75248 0.222872 7.45531L4.35912 3.31906C4.65628 3.0219 5.15178 3.0219 5.44895 3.31906C5.74612 3.61623 5.74611 4.11172 5.44895 4.4089L2.65013 7.25721Z" fill="white"/>
+                                </svg>
+                                
+                            Предыдущий этап
+                            
+                          
                                 
                         </a>
                         <a href="" class="button-primary button--with-icon" id="nextBtn">
@@ -856,8 +866,10 @@
                     const steps = document.querySelectorAll(".step");
                     const prevBtn = document.querySelector("#prevBtn");
                     const nextBtn = document.querySelector("#nextBtn");
+                    const nextBtn2 = document.querySelector("#nextBtn2");
                     const stepNavItems = document.querySelectorAll(".step-nav__item");
                     const paginationItems = document.querySelectorAll(".step-pagination .circle");
+                    const paginationItems2 = document.querySelectorAll(".steps-nav .step-nav__item");
                     let currentStep = 0;
                     document.querySelector(".number-pagination .total").innerText = stepList.length;
 
@@ -868,10 +880,23 @@
                             currentStep = index;
                         })
                     })
+
+                          
+                    paginationItems2.forEach((item, index) => {
+                        item.addEventListener("click", function(e){
+                            showStep(index)
+                            currentStep = index;
+                        })
+                    })
                   
                     
                     function showStep(stepIndex) {
                         // скрываем все шаги
+                        if(stepIndex == 0){
+                            document.querySelector("#prevBtn").style.display = "none"
+                        }else{
+                            document.querySelector("#prevBtn").style.display = "flex"
+                        }
                         steps.forEach((step) => {
                             step.style.display = "none";
                         });
@@ -932,6 +957,7 @@
 
                     nextBtn.addEventListener("click", showNextStep);
                     prevBtn.addEventListener("click", showPrevStep);
+                    prevBtn2.addEventListener("click", showPrevStep);
 
             
               
@@ -998,9 +1024,7 @@
                             <li class="mb-2">
                                 <a href="about.html" class="footer-menu__link">О технологии</a>
                             </li>
-                            <li class="mb-2">
-                                <a href="documents.html" class="footer-menu__link">Документы</a>
-                            </li>
+                           
                             <li class="mb-2">
                                 <a href="Investment.html" class="footer-menu__link">Инвестирование</a>
                             </li>
@@ -1020,6 +1044,9 @@
                             <li class="mb-2">
                                 <a href="steps.html" class="footer-menu__link">Этапы работы <br> с клиентом</a>
                             </li>
+ <li class="mb-2">
+                                <a href="documents.html" class="footer-menu__link">Документы</a>
+                            </li>
                             <li class="mb-2">
                                 <a href="404.html" class="footer-menu__link">Продукция</a>
                             </li>
@@ -1037,9 +1064,7 @@
                     <div class="max-w-[120px] md:max-w-[160px] w-full">
                         <span class="uppercase text-light-orange text-sm">КОНТАКТЫ</span>
                         <ul class="pt-3">
-                            <li class="mb-2">
-                                <a href="documents.html" class="footer-menu__link">Документы</a>
-                            </li>
+                           
                             <li class="mb-2">
                                 <a href="contact.html" class="footer-menu__link">Контакты</a>
                             </li>
