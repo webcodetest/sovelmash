@@ -388,33 +388,76 @@ if(document.querySelector(".step-slider__subslider")){
 
 
 if(document.querySelector(".documents-slider")){
-    new Swiper('.documents-slider', {
-        slidesPerView: 6,
-        spaceBetween: 24,
-        navigation: {
-            nextEl: `.documents .arrow-right`,
-            prevEl: `.documents .arrow-left`,
-        },
-        pagination:{
-            el: '.documents-pagination'
-        },
-
-        breakpoints:{
-            0:{
-                slidesPerView: 1
+    document.querySelectorAll(".documents-slider").forEach(doc => {
+        const arrowRight = doc.closest(".documents").querySelector(".arrow-right")
+        const arrowLeft = doc.closest(".documents").querySelector(".arrow-left")
+        const pagination = doc.closest(".documents").querySelector(".documents-pagination")
+        new Swiper(doc, {
+            slidesPerView: 6,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: arrowRight,
+                prevEl: arrowLeft,
             },
-            540:{
-                slidesPerView: 3
+            pagination:{
+                el: pagination
             },
-            991:{
-                slidesPerView: 4,
-            },
-            1200:{
-                slidesPerView: 6
+    
+            breakpoints:{
+                0:{
+                    slidesPerView: 1
+                },
+                540:{
+                    slidesPerView: 3
+                },
+                991:{
+                    slidesPerView: 4,
+                },
+                1200:{
+                    slidesPerView: 6
+                }
             }
-        }
-       
-    });
+           
+        });
+    })
+  
+}
+
+
+if(document.querySelector(".documents-slider-5")){
+    document.querySelectorAll(".documents-slider-5").forEach(doc => {
+        const arrowRight = doc.closest(".documents").querySelector(".arrow-right")
+        const arrowLeft = doc.closest(".documents").querySelector(".arrow-left")
+        const pagination = doc.closest(".documents").querySelector(".documents-pagination")
+        new Swiper(doc, {
+            slidesPerView: 5,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: arrowRight,
+                prevEl: arrowLeft,
+            },
+            pagination:{
+                el: pagination
+            },
+    
+            breakpoints:{
+                0:{
+                    slidesPerView: 1
+                },
+                540:{
+                    slidesPerView: 3
+                },
+                991:{
+                    slidesPerView: 4,
+                },
+                1200:{
+                    slidesPerView: 5
+                }
+            }
+           
+        });
+    })
+  
 }
 
 if(document.querySelector(".documents-slider--mobile")){
