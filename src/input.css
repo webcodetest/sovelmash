@@ -361,9 +361,9 @@ body, button, input, textarea, a, span, p, div{
 .view{
     background: #393c4173;
 }
-.view:hover{
+/* .view:hover{
     background: #393C41;
-}
+} */
 .document-slide__subtitle{
     @apply text-sm text-details leading-4 min-h-[60px] mt-3;
 }
