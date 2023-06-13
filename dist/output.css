@@ -2278,9 +2278,9 @@ body, button, input, textarea, a, span, p, div{
   background: #393c4173;
 }
 
-.view:hover{
-  background: #393C41;
-}
+/* .view:hover{
+    background: #393C41;
+} */
 
 .document-slide__subtitle {
   margin-top: 0.75rem;
