@@ -19,6 +19,7 @@ module.exports = {
         'disable-grey': '#DDDDDD',
         'light-grey': '#B6B6B6',
         'body': '#393C41'
+        
       },
 
      
