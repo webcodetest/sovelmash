@@ -733,6 +733,14 @@ video {
   margin-top: auto;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
@@ -937,6 +945,14 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[980px\] {
+  max-width: 980px;
+}
+
+.max-w-\[975px\] {
+  max-width: 975px;
 }
 
 .flex-1 {
@@ -1482,6 +1498,23 @@ video {
   line-height: 2.25rem;
 }
 
+.leading-\[80px\] {
+  line-height: 80px;
+}
+
+.leading-\[60px\] {
+  line-height: 60px;
+}
+
+.leading-\[120\%\] {
+  line-height: 120%;
+}
+
+.text-\[\#171A20\] {
+  --tw-text-opacity: 1;
+  color: rgb(23 26 32 / var(--tw-text-opacity));
+}
+
 .text-\[\#3185FC\] {
   --tw-text-opacity: 1;
   color: rgb(49 133 252 / var(--tw-text-opacity));
@@ -1535,6 +1568,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#393C41\] {
+  --tw-text-opacity: 1;
+  color: rgb(57 60 65 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2436,6 +2474,10 @@ body, button, input, textarea, a, span, p, div{
     margin-top: 2.5rem;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:mt-14 {
     margin-top: 3.5rem;
   }
@@ -2673,6 +2715,10 @@ body, button, input, textarea, a, span, p, div{
 
   .md\:text-\[28px\] {
     font-size: 28px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .md\:text-base {
